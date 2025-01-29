@@ -38,43 +38,51 @@ Before running the evaluation script, you need to train your machine learning mo
 python train.py
 ```
 Ensure the trained models are saved in the /models folder (e.g., logistic_regression.pkl, random_forest.pkl, neural_network.h5).
-Step 3: Run the Evaluation
+
+### **Step 3: Run the Evaluation**
 Once the models are saved, run the evaluation script to evaluate the models and save the results:
 
-bash
-Copy
-Edit
+```bash
 python model_evaluation.py
-Step 4: Check the Results
+```
+### **Step 4: Check the Results**
+
 After the evaluation, the results will be saved in the /results folder as CSV files. You can open the evaluation_results.csv file to view the performance metrics for each model.
 
-Evaluation Metrics
+### **Evaluation Metrics**
 The following metrics are used to evaluate the models:
 
-Accuracy: Proportion of correctly predicted instances.
-Precision: Proportion of positive predictions that are actually positive.
-Recall: Proportion of actual positive instances that are identified.
-F1-Score: Harmonic mean of Precision and Recall, providing a balanced measure.
-Example Output
-Console Output:
-When you run the model_evaluation.py script, you will see the following output for each model:
+**Accuracy**: Proportion of correctly predicted instances.<br>
+**Precision**: Proportion of positive predictions that are actually positive.<brr>
+**Recall**: Proportion of actual positive instances that are identified.<br>
+**F1-Score**: Harmonic mean of Precision and Recall, providing a balanced measure.<br>
 
-text
-Copy
-Edit
-Evaluating Logistic Regression
-Metrics for Logistic Regression:
-Accuracy: 0.82
-Precision: 0.85
-Recall: 0.80
-F1 Score: 0.82
+### Example Output ###
+
+### Evaluating Logistic Regression
+
+Accuracy: 0.8100558659217877<br>
+Precision: 0.8091625969233472<br>
+Recall: 0.8100558659217877<br>
+F1 Score: 0.8091929317716401<br>
+Model: Logistic Regression
+
+
+### Evaluating Random Forest
+Metrics for Random Forest:
+Accuracy: 0.8212290502793296<br>
+Precision: 0.8204500025626569<br>
+Recall: 0.8212290502793296<br>
+F1 Score: 0.8204168769615436<br>
+Model: Random Forest
+
+### Evaluating Neural Network
+6/6 ━━━━━━━━━━━━━━━━━━━━ 0s 29ms/step
+Metrics for Neural Network:<br>
+Accuracy: 0.7094972067039106<br>
+Precision: 0.7409543667206816<br>
+Recall: 0.7094972067039106<br>
+F1 Score: 0.6789406165942479<br>
+Model: Neural Network
 Results saved to the 'results' folder.
-CSV Output:
-A CSV file will be saved in the results folder, for example:
-
-csv
-Copy
-Edit
-Model,Accuracy,Precision,Recall,F1 Score
-Logistic Regression,0.82,0.85,0.80,0.82
 
