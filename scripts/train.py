@@ -62,7 +62,7 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42)
 
-    # train_logistic_regression(X_train, y_train)
-    # train_random_forest(X_train, y_train)
+    train_logistic_regression(X_train, y_train)
+    train_random_forest(X_train, y_train)
     train_neural_network(X_train, y_train)
     
